@@ -24,7 +24,7 @@ spec:
       # The above command will create the container, then run it for 120 seconds and then terminate.
       # If let say, you need to run a bash script, then the command woud be
       # command: [ "/bin/bash", "/data/research_papers_and_codes/2017_Deep_Video_Deblurring_For_Handheld_Cameras/zipfiles/DeepVideoDeblurring-master/run_pred.sh"]
-      command: ["python3","run.py"]
+      command: ["python3","/home/gdata/shivangi/openvqa/run.py"]
       args: ["--RUN=train", "--MODEL=mcan_small", "--DATASET=vqa"]
       # Request the number of GPU nodes.
       resources:
