@@ -39,7 +39,7 @@ spec:
   - name: nfs-data
     hostPath:
       # Replace the USERNAME with your login account name.
-      path: /home/kubernetes/data/shivangigarg24/
+      path: /home/gdata/shivangi/
       type: Directory
   - name: dshm
     emptyDir: 
