@@ -20,11 +20,11 @@ spec:
       # Once the container is started, the following command will be run. Note that all the data moved to the login node home directory will be accessible to the container in the /data/ directory.
       # command: [ "/bin/bash", "/data/what_ever_code_you_want_to_run" ]
       # For demo, to check working of kubernetes, comment the above command and uncomment the following commands.
-      command: [ "/bin/sleep", "120" ]
+      #command: [ "/bin/sleep", "120" ]
       # The above command will create the container, then run it for 120 seconds and then terminate.
       # If let say, you need to run a bash script, then the command woud be
       # command: [ "/bin/bash", "/data/research_papers_and_codes/2017_Deep_Video_Deblurring_For_Handheld_Cameras/zipfiles/DeepVideoDeblurring-master/run_pred.sh"]
-      #command: ["python3","/home/gdata/shivangi/openvqa/run.py"]
+      command: ["python3","/home/gdata/data/shivangi/openvqa/run.py"]
       args: ["--RUN=train", "--MODEL=mcan_small", "--DATASET=vqa"]
       # Request the number of GPU nodes.
       resources:
