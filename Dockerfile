@@ -40,6 +40,11 @@ RUN mkdir /workspace && \
     
 # delete openvqa repo
 #RUN rm -r /workspace/openvqa
+RUN apt-get install zip unzip
+RUN apt-get install nano
+RUN apt-get install -y gedit
+RUN apt-get install -y lynx
+RUN apt-get update
 
 WORKDIR /workspace
 
