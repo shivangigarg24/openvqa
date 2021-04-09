@@ -39,7 +39,7 @@ RUN mkdir /workspace && \
     cd /
     
 # delete openvqa repo
-RUN rm -r /workspace/openvqa
+#RUN rm -r /workspace/openvqa
 
 WORKDIR /workspace
 
